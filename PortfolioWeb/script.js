@@ -1,0 +1,1 @@
+console.log("Portafolio cargado – Samira, Estiven y Almer © 2025");

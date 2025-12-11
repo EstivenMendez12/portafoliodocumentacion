@@ -1,0 +1,8 @@
+body { font-family: 'Segoe UI', sans-serif; background: #f8f9fc; }
+header { background: linear-gradient(135deg, #0033A0, #0055CC); }
+.card { border: none; border-radius: 12px; overflow: hidden; transition: all 0.3s; }
+.card:hover { transform: translateY(-10px); box-shadow: 0 15px 30px rgba(0,0,0,0.15); }
+.card-img-top { height: 240px; object-fit: cover; }
+h5 { color: #0033A0; font-weight: 600; }
+.btn-outline-primary { border-color: #0033A0; color: #0033A0; }
+.btn-outline-primary:hover { background: #0033A0; }
