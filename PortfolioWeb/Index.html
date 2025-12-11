@@ -47,13 +47,13 @@
             <div class="row align-items-center">
                 <div class="col-lg-6">
                     <h1 class="display-4 fw-bold mb-3">Portafolio de Documentación Técnica</h1>
-                    <p class="lead mb-4">Colección organizada de documentos sobre calidad de software, métricas, estándares ISO y rendimiento de sistemas.</p>
+                    <p class="lead mb-4">Colección organizada de 12 documentos sobre calidad de software, estándares ISO, metodologías ágiles y métricas de rendimiento.</p>
                     <div class="d-flex gap-3">
                         <a href="#documentos" class="btn btn-primary btn-lg">
-                            <i class="fas fa-eye me-2"></i>Ver Documentos
+                            <i class="fas fa-eye me-2"></i>Explorar Documentos
                         </a>
                         <a href="#sobre" class="btn btn-outline-light btn-lg">
-                            <i class="fas fa-user me-2"></i>Sobre el Proyecto
+                            <i class="fas fa-info-circle me-2"></i>Más Información
                         </a>
                     </div>
                 </div>
@@ -62,23 +62,54 @@
                         <i class="fas fa-file-pdf"></i>
                         <i class="fas fa-chart-line"></i>
                         <i class="fas fa-certificate"></i>
+                        <i class="fas fa-cogs"></i>
                     </div>
                 </div>
             </div>
         </div>
     </header>
 
+    <!-- Filtros por Categoría -->
+    <section class="filters-section py-4 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="d-flex flex-wrap justify-content-center gap-2">
+                        <button class="btn btn-sm btn-outline-primary filter-btn active" data-filter="all">
+                            Todos los Documentos
+                        </button>
+                        <button class="btn btn-sm btn-outline-primary filter-btn" data-filter="iso">
+                            <i class="fas fa-certificate me-1"></i>Estándares ISO
+                        </button>
+                        <button class="btn btn-sm btn-outline-primary filter-btn" data-filter="taller">
+                            <i class="fas fa-tools me-1"></i>Talleres
+                        </button>
+                        <button class="btn btn-sm btn-outline-primary filter-btn" data-filter="metodologia">
+                            <i class="fas fa-project-diagram me-1"></i>Metodologías
+                        </button>
+                        <button class="btn btn-sm btn-outline-primary filter-btn" data-filter="rendimiento">
+                            <i class="fas fa-tachometer-alt me-1"></i>Rendimiento
+                        </button>
+                        <button class="btn btn-sm btn-outline-primary filter-btn" data-filter="proyecto">
+                            <i class="fas fa-briefcase me-1"></i>Proyectos
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Documentos Section -->
     <section class="documents-section py-5" id="documentos">
         <div class="container">
             <div class="section-header text-center mb-5">
                 <h2 class="section-title">Documentos Técnicos</h2>
-                <p class="section-subtitle">Explora mi colección de documentos sobre calidad de software</p>
+                <p class="section-subtitle">12 documentos organizados por categorías</p>
             </div>
 
-            <div class="row g-4">
-                <!-- Documento 1 -->
-                <div class="col-md-6 col-lg-4">
+            <div class="row g-4" id="documents-container">
+                <!-- Documento 1: ISO 9126 -->
+                <div class="col-md-6 col-lg-4" data-category="iso">
                     <div class="card document-card h-100">
                         <div class="card-header">
                             <span class="badge bg-primary">ISO 9126</span>
@@ -89,7 +120,7 @@
                                 <i class="fas fa-certificate"></i>
                             </div>
                             <h5 class="card-title">ISO 9126 - Calidad de Software</h5>
-                            <p class="card-text">Documento detallado sobre el estándar internacional para la calidad del producto software.</p>
+                            <p class="card-text">Estándar internacional para la evaluación de la calidad del producto software, cubrinde funcionalidad, confiabilidad, usabilidad y más.</p>
                             <div class="document-meta">
                                 <small><i class="fas fa-file-pdf text-danger"></i> PDF - 381 KB</small>
                                 <small><i class="fas fa-clock text-secondary"></i> 25 páginas</small>
@@ -97,18 +128,96 @@
                         </div>
                         <div class="card-footer">
                             <a href="pdfs/iso9126.pdf" target="_blank" class="btn btn-primary w-100">
-                                <i class="fas fa-download me-2"></i>Ver Documento
+                                <i class="fas fa-external-link-alt me-2"></i>Abrir Documento
                             </a>
                         </div>
                     </div>
                 </div>
 
-                <!-- Documento 2 -->
-                <div class="col-md-6 col-lg-4">
+                <!-- Documento 2: ISO 9001 -->
+                <div class="col-md-6 col-lg-4" data-category="iso">
                     <div class="card document-card h-100">
                         <div class="card-header">
-                            <span class="badge bg-success">Rendimiento</span>
-                            <span class="badge bg-warning">Análisis</span>
+                            <span class="badge bg-primary">ISO 9001</span>
+                            <span class="badge bg-success">Gestión</span>
+                        </div>
+                        <div class="card-body">
+                            <div class="document-icon">
+                                <i class="fas fa-award"></i>
+                            </div>
+                            <h5 class="card-title">Informe ISO Calidad 9001</h5>
+                            <p class="card-text">Análisis del estándar de gestión de calidad aplicado a procesos de desarrollo de software y mejora continua.</p>
+                            <div class="document-meta">
+                                <small><i class="fas fa-file-pdf text-danger"></i> PDF</small>
+                                <small><i class="fas fa-clock text-secondary"></i> Informe</small>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <a href="pdfs/Informe-IsoCalidad9001.pdf" target="_blank" class="btn btn-primary w-100">
+                                <i class="fas fa-external-link-alt me-2"></i>Abrir Documento
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Documento 3: CMMI -->
+                <div class="col-md-6 col-lg-4" data-category="iso metodologia">
+                    <div class="card document-card h-100">
+                        <div class="card-header">
+                            <span class="badge bg-primary">CMMI</span>
+                            <span class="badge bg-warning">Madurez</span>
+                        </div>
+                        <div class="card-body">
+                            <div class="document-icon">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <h5 class="card-title">Modelo CMMI</h5>
+                            <p class="card-text">Capability Maturity Model Integration: modelo para mejorar los procesos de desarrollo de software.</p>
+                            <div class="document-meta">
+                                <small><i class="fas fa-file-pdf text-danger"></i> PDF</small>
+                                <small><i class="fas fa-clock text-secondary"></i> Documento</small>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <a href="pdfs/Modelo-CMMI.pdf" target="_blank" class="btn btn-primary w-100">
+                                <i class="fas fa-external-link-alt me-2"></i>Abrir Documento
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Documento 4: Normativas 15504-12207 -->
+                <div class="col-md-6 col-lg-4" data-category="iso proyecto">
+                    <div class="card document-card h-100">
+                        <div class="card-header">
+                            <span class="badge bg-primary">SPICE</span>
+                            <span class="badge bg-secondary">12207</span>
+                        </div>
+                        <div class="card-body">
+                            <div class="document-icon">
+                                <i class="fas fa-file-contract"></i>
+                            </div>
+                            <h5 class="card-title">Normativas 15504-12207</h5>
+                            <p class="card-text">Estudio de las normativas ISO/IEC 15504 (SPICE) e ISO/IEC 12207 aplicadas a proyectos de software.</p>
+                            <div class="document-meta">
+                                <small><i class="fas fa-file-pdf text-danger"></i> PDF</small>
+                                <small><i class="fas fa-clock text-secondary"></i> Proyecto</small>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <a href="pdfs/Normativas15504-12207-Proyecto.pdf" target="_blank" class="btn btn-primary w-100">
+                                <i class="fas fa-external-link-alt me-2"></i>Abrir Documento
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Documento 5: Métricas Ágiles -->
+                <div class="col-md-6 col-lg-4" data-category="metodologia taller">
+                    <div class="card document-card h-100">
+                        <div class="card-header">
+                            <span class="badge bg-success">Ágil</span>
+                            <span class="badge bg-info">Métricas</span>
                         </div>
                         <div class="card-body">
                             <div class="document-icon">
@@ -123,14 +232,14 @@
                         </div>
                         <div class="card-footer">
                             <a href="pdfs/rendimiento.pdf" target="_blank" class="btn btn-primary w-100">
-                                <i class="fas fa-download me-2"></i>Ver Documento
+                                <i class="fas fa-external-link-alt me-2"></i>Abrir Documento
                             </a>
                         </div>
                     </div>
                 </div>
 
-                <!-- Documento 3 -->
-                <div class="col-md-6 col-lg-4">
+                <!-- Documento 6: Taller 1 - Métricas -->
+                <div class="col-md-6 col-lg-4" data-category="taller">
                     <div class="card document-card h-100">
                         <div class="card-header">
                             <span class="badge bg-danger">Taller 1</span>
@@ -149,14 +258,14 @@
                         </div>
                         <div class="card-footer">
                             <a href="pdfs/taller1-metricas.pdf" target="_blank" class="btn btn-primary w-100">
-                                <i class="fas fa-download me-2"></i>Ver Documento
+                                <i class="fas fa-external-link-alt me-2"></i>Abrir Documento
                             </a>
                         </div>
                     </div>
                 </div>
 
-                <!-- Documento 4 -->
-                <div class="col-md-6 col-lg-4">
+                <!-- Documento 7: Taller 2 - McCall -->
+                <div class="col-md-6 col-lg-4" data-category="taller">
                     <div class="card document-card h-100">
                         <div class="card-header">
                             <span class="badge bg-danger">Taller 2</span>
@@ -175,14 +284,14 @@
                         </div>
                         <div class="card-footer">
                             <a href="pdfs/taller2-mccall.pdf" target="_blank" class="btn btn-primary w-100">
-                                <i class="fas fa-download me-2"></i>Ver Documento
+                                <i class="fas fa-external-link-alt me-2"></i>Abrir Documento
                             </a>
                         </div>
                     </div>
                 </div>
 
-                <!-- Documento 5 -->
-                <div class="col-md-6 col-lg-4">
+                <!-- Documento 8: Taller 3 - Productividad -->
+                <div class="col-md-6 col-lg-4" data-category="taller rendimiento">
                     <div class="card document-card h-100">
                         <div class="card-header">
                             <span class="badge bg-danger">Taller 3</span>
@@ -201,14 +310,66 @@
                         </div>
                         <div class="card-footer">
                             <a href="pdfs/taller3-productividad.pdf" target="_blank" class="btn btn-primary w-100">
-                                <i class="fas fa-download me-2"></i>Ver Documento
+                                <i class="fas fa-external-link-alt me-2"></i>Abrir Documento
                             </a>
                         </div>
                     </div>
                 </div>
 
-                <!-- Documento 6 -->
-                <div class="col-md-6 col-lg-4">
+                <!-- Documento 9: Metodologías Ágiles -->
+                <div class="col-md-6 col-lg-4" data-category="metodologia">
+                    <div class="card document-card h-100">
+                        <div class="card-header">
+                            <span class="badge bg-success">Ágil</span>
+                            <span class="badge bg-primary">Metodología</span>
+                        </div>
+                        <div class="card-body">
+                            <div class="document-icon">
+                                <i class="fas fa-sync-alt"></i>
+                            </div>
+                            <h5 class="card-title">Módulo Metodologías Ágiles</h5>
+                            <p class="card-text">Informe completo sobre metodologías ágiles: Scrum, Kanban, XP y su aplicación práctica.</p>
+                            <div class="document-meta">
+                                <small><i class="fas fa-file-pdf text-danger"></i> PDF</small>
+                                <small><i class="fas fa-clock text-secondary"></i> Módulo</small>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <a href="pdfs/Informe-Módulo-MetodologiasAgiles.pdf" target="_blank" class="btn btn-primary w-100">
+                                <i class="fas fa-external-link-alt me-2"></i>Abrir Documento
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Documento 10: Proyecto Libre Dependencias -->
+                <div class="col-md-6 col-lg-4" data-category="proyecto">
+                    <div class="card document-card h-100">
+                        <div class="card-header">
+                            <span class="badge bg-dark">Trabajo de Grado</span>
+                            <span class="badge bg-info">Dependencias</span>
+                        </div>
+                        <div class="card-body">
+                            <div class="document-icon">
+                                <i class="fas fa-code-branch"></i>
+                            </div>
+                            <h5 class="card-title">TG - Dependencias Proyecto Libre</h5>
+                            <p class="card-text">Trabajo de grado sobre análisis de dependencias en proyectos de software libre.</p>
+                            <div class="document-meta">
+                                <small><i class="fas fa-file-pdf text-danger"></i> PDF</small>
+                                <small><i class="fas fa-clock text-secondary"></i> TG</small>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <a href="pdfs/Informe-TG-DependenciasProyectLibre.pdf" target="_blank" class="btn btn-primary w-100">
+                                <i class="fas fa-external-link-alt me-2"></i>Abrir Documento
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Documento 11: Video ISO -->
+                <div class="col-md-6 col-lg-4" data-category="iso">
                     <div class="card document-card h-100">
                         <div class="card-header">
                             <span class="badge bg-primary">Video</span>
@@ -219,7 +380,7 @@
                                 <i class="fas fa-video"></i>
                             </div>
                             <h5 class="card-title">Video - ISO Explicado</h5>
-                            <p class="card-text">Material complementario en formato video sobre estándares ISO.</p>
+                            <p class="card-text">Material complementario en formato video sobre estándares ISO para calidad de software.</p>
                             <div class="document-meta">
                                 <small><i class="fas fa-file-pdf text-danger"></i> PDF - 207 KB</small>
                                 <small><i class="fas fa-clock text-secondary"></i> 12 páginas</small>
@@ -227,7 +388,33 @@
                         </div>
                         <div class="card-footer">
                             <a href="pdfs/video-iso.pdf" target="_blank" class="btn btn-primary w-100">
-                                <i class="fas fa-download me-2"></i>Ver Documento
+                                <i class="fas fa-external-link-alt me-2"></i>Abrir Documento
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Documento 12: Resumen General -->
+                <div class="col-md-6 col-lg-4" data-category="iso metodologia">
+                    <div class="card document-card h-100">
+                        <div class="card-header">
+                            <span class="badge bg-success">Resumen</span>
+                            <span class="badge bg-primary">Compilación</span>
+                        </div>
+                        <div class="card-body">
+                            <div class="document-icon">
+                                <i class="fas fa-book"></i>
+                            </div>
+                            <h5 class="card-title">Compilación Documentos</h5>
+                            <p class="card-text">Resumen ejecutivo y compilación de los principales documentos sobre calidad de software.</p>
+                            <div class="document-meta">
+                                <small><i class="fas fa-file-pdf text-danger"></i> PDF</small>
+                                <small><i class="fas fa-clock text-secondary"></i> Resumen</small>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#documentos" class="btn btn-outline-primary w-100">
+                                <i class="fas fa-list me-2"></i>Ver Colección Completa
                             </a>
                         </div>
                     </div>
@@ -242,24 +429,24 @@
             <div class="row align-items-center">
                 <div class="col-lg-6">
                     <h2 class="mb-4">Sobre este Portafolio</h2>
-                    <p class="lead">Este portafolio recopila documentación técnica especializada en calidad de software, métricas y estándares internacionales.</p>
-                    <p>Cada documento representa un aspecto fundamental en la evaluación y mejora de la calidad del software, desde estándares ISO hasta métricas prácticas de rendimiento y productividad.</p>
+                    <p class="lead">Este portafolio recopila 12 documentos técnicos especializados en calidad de software, metodologías ágiles y estándares internacionales.</p>
+                    <p>La colección incluye estándares ISO (9126, 9001, CMMI), metodologías ágiles, análisis de rendimiento, trabajos de grado y talleres prácticos sobre métricas de software.</p>
                     <div class="features-list mt-4">
                         <div class="feature-item">
                             <i class="fas fa-check-circle text-primary"></i>
-                            <span>Documentación organizada por categorías</span>
+                            <span>12 documentos organizados en 6 categorías</span>
                         </div>
                         <div class="feature-item">
                             <i class="fas fa-check-circle text-primary"></i>
-                            <span>Acceso directo a archivos PDF</span>
+                            <span>Acceso directo a todos los PDFs</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle text-primary"></i>
+                            <span>Sistema de filtrado por categorías</span>
                         </div>
                         <div class="feature-item">
                             <i class="fas fa-check-circle text-primary"></i>
                             <span>Diseño responsivo y moderno</span>
-                        </div>
-                        <div class="feature-item">
-                            <i class="fas fa-check-circle text-primary"></i>
-                            <span>Información detallada de cada documento</span>
                         </div>
                     </div>
                 </div>
@@ -268,20 +455,20 @@
                         <h4 class="mb-4">Estadísticas del Portafolio</h4>
                         <div class="row text-center">
                             <div class="col-6 mb-4">
-                                <div class="stat-number">6</div>
+                                <div class="stat-number">12</div>
                                 <div class="stat-label">Documentos</div>
                             </div>
                             <div class="col-6 mb-4">
-                                <div class="stat-number">4</div>
+                                <div class="stat-number">6</div>
                                 <div class="stat-label">Categorías</div>
                             </div>
                             <div class="col-6">
-                                <div class="stat-number">1.8</div>
-                                <div class="stat-label">MB Total</div>
+                                <div class="stat-number">4</div>
+                                <div class="stat-label">Estándares ISO</div>
                             </div>
                             <div class="col-6">
-                                <div class="stat-number">132</div>
-                                <div class="stat-label">Páginas</div>
+                                <div class="stat-number">3</div>
+                                <div class="stat-label">Talleres Prácticos</div>
                             </div>
                         </div>
                     </div>
@@ -295,16 +482,25 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-6">
-                    <h5>Portafolio de Documentación</h5>
-                    <p>Colección técnica sobre calidad de software</p>
+                    <h5>Portafolio de Documentación Técnica</h5>
+                    <p>Colección de 12 documentos sobre calidad de software</p>
+                    <p class="small mt-2">
+                        <i class="fas fa-folder me-1"></i> Contiene: ISO 9126, ISO 9001, CMMI, Metodologías Ágiles, Talleres Prácticos y más
+                    </p>
                 </div>
                 <div class="col-lg-6 text-lg-end">
                     <div class="social-links">
-                        <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
-                        <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
-                        <a href="#" class="social-icon"><i class="fas fa-envelope"></i></a>
+                        <a href="#" class="social-icon" title="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="#" class="social-icon" title="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="mailto:tu-email@ejemplo.com" class="social-icon" title="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
                     </div>
-                    <p class="mt-3">© 2025. Todos los derechos reservados.</p>
+                    <p class="mt-3">© 2025 Jeremy. Portafolio de Documentación Técnica.</p>
                 </div>
             </div>
         </div>

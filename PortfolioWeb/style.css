@@ -380,3 +380,70 @@ h1, h2, h3, h4, h5, h6 {
         align-items: flex-start;
     }
 }
+
+
+/* Añadir estas reglas al final de tu style.css */
+
+/* Filtros Section */
+.filters-section {
+    position: sticky;
+    top: 76px;
+    z-index: 100;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.filter-btn {
+    transition: all 0.3s ease;
+    border-width: 2px;
+}
+
+.filter-btn.active {
+    background: var(--primary-color);
+    color: white;
+    border-color: var(--primary-color);
+    transform: translateY(-2px);
+}
+
+.filter-btn:hover:not(.active) {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 10px rgba(0, 51, 160, 0.1);
+}
+
+/* Transición suave para filtrado */
+[data-category] {
+    transition: all 0.3s ease;
+}
+
+/* Animación para nuevos documentos */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.col-md-6.col-lg-4 {
+    animation: fadeInUp 0.5s ease forwards;
+}
+
+/* Añadir más íconos al hero */
+.hero-illustration i:nth-child(4) {
+    top: 60%;
+    left: 30%;
+    font-size: 6rem;
+    animation: float 8s ease-in-out infinite;
+    animation-delay: -3s;
+}
+
+/* Ajustar para más documentos */
+.document-card .card-title {
+    min-height: 70px;
+}
+
+.document-card .card-text {
+    min-height: 90px;
+}
