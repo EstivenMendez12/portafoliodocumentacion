@@ -1,471 +1,318 @@
 <!DOCTYPE html>
-<html lang="es" data-bs-theme="light">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio Académico UPEC | Samira Narváez • Estiven Méndez • Almer Paguay</title>
-    <meta name="description" content="Portafolio académico de la carrera de Computación - 7mo Nivel, Universidad Politécnica Estatal del Carchi (UPEC)">
-    <meta name="keywords" content="UPEC, portafolio académico, calidad de software, métricas, ISO, rendimiento">
-    <meta name="author" content="Samira Narváez, Estiven Méndez, Almer Paguay">
-    
-    <!-- Preconexión para mejorar rendimiento -->
-    <link rel="preconnect" href="https://cdn.jsdelivr.net">
-    <link rel="preconnect" href="https://cdnjs.cloudflare.com/ajax/libs">
-    
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" 
-          integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" 
-          integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw==" crossorigin="anonymous">
-    
-    <!-- CSS personalizado -->
+    <title>Portafolio de Documentación | Jeremy</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
-    
-    <!-- Favicon con fallback -->
-    <link rel="icon" type="image/png" href="https://www.upec.edu.ec/wp-content/uploads/2020/08/favicon-upec.png">
-    <link rel="apple-touch-icon" href="https://www.upec.edu.ec/wp-content/uploads/2020/08/logo-upec-blanco.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
-
-<body class="bg-light">
-    <!-- Navegación principal mejorada -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm sticky-top" aria-label="Navegación principal">
+<body>
+    <!-- Navegación -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
         <div class="container">
-            <!-- Logo y marca -->
-            <a class="navbar-brand fw-bold d-flex align-items-center gap-2" href="#" aria-label="Inicio del portafolio">
-                <img src="https://www.upec.edu.ec/wp-content/uploads/2020/08/logo-upec-blanco.png" 
-                     alt="Logo UPEC" width="40" height="40" loading="lazy">
-                <span>Portafolio UPEC 2025</span>
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <i class="fas fa-folder-open me-2"></i>
+                <span>Portafolio Doc</span>
             </a>
-            
-            <!-- Controles de búsqueda y tema -->
-            <div class="d-flex align-items-center gap-3">
-                <!-- Búsqueda con etiqueta ARIA -->
-                <div class="search-container">
-                    <label for="searchInput" class="visually-hidden">Buscar trabajo académico</label>
-                    <input type="search" 
-                           id="searchInput" 
-                           class="form-control form-control-sm" 
-                           placeholder="Buscar trabajo..." 
-                           aria-label="Buscar trabajos académicos">
-                    <span class="visually-hidden" id="searchStatus"></span>
-                </div>
-                
-                <!-- Botón de cambio de tema -->
-                <button id="themeToggle" 
-                        class="btn btn-outline-light btn-sm" 
-                        aria-label="Cambiar tema claro/oscuro"
-                        title="Cambiar tema claro/oscuro">
-                    <i class="fas fa-moon" aria-hidden="true"></i>
-                    <span class="visually-hidden">Cambiar tema</span>
-                </button>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#inicio">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#documentos">Documentos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#sobre">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacto">Contacto</a>
+                    </li>
+                </ul>
             </div>
         </div>
     </nav>
 
-    <!-- Cabecera principal -->
-    <header class="bg-gradient text-white text-center py-6" 
-            style="background: linear-gradient(135deg, #0033A0, #0055CC);"
-            role="banner">
+    <!-- Hero Section -->
+    <header class="hero-section" id="inicio">
         <div class="container">
-            <h1 class="display-4 fw-bold mb-3">Portafolio Académico</h1>
-            <p class="lead mb-2">Carrera de Computación – Séptimo Nivel</p>
-            <p class="fs-5 mb-0" aria-label="Integrantes del grupo">
-                <strong>Integrantes:</strong> Samira Narváez • Estiven Méndez • Almer Paguay
-            </p>
-            <p class="text-white-50 mt-3 mb-0">
-                Calidad de Software • Métricas • Normativas ISO • Rendimiento
-            </p>
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h1 class="display-4 fw-bold mb-3">Portafolio de Documentación Técnica</h1>
+                    <p class="lead mb-4">Colección organizada de documentos sobre calidad de software, métricas, estándares ISO y rendimiento de sistemas.</p>
+                    <div class="d-flex gap-3">
+                        <a href="#documentos" class="btn btn-primary btn-lg">
+                            <i class="fas fa-eye me-2"></i>Ver Documentos
+                        </a>
+                        <a href="#sobre" class="btn btn-outline-light btn-lg">
+                            <i class="fas fa-user me-2"></i>Sobre el Proyecto
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-6 text-center">
+                    <div class="hero-illustration">
+                        <i class="fas fa-file-pdf"></i>
+                        <i class="fas fa-chart-line"></i>
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                </div>
+            </div>
         </div>
     </header>
 
-    <!-- Contenido principal -->
-    <main class="container my-5" id="main-content">
-        <h2 class="text-center mb-5 text-primary fw-bold">Trabajos Académicos</h2>
-        
-        <!-- Grid de trabajos con mejor semántica -->
-        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4" id="trabajosContainer" role="list">
-            
-            <!-- Taller 1 -->
-            <div class="col trabajo-card" 
-                 data-tags="métricas básico producto proceso proyecto" 
-                 role="listitem">
-                <article class="card h-100 shadow-lg border-0 hover-shadow">
-                    <figure class="card-figure m-0">
-                        <img src="images/taller1.jpg" 
-                             class="card-img-top" 
-                             alt="Ilustración de gráficos y métricas de software" 
-                             loading="lazy"
-                             width="400"
-                             height="225">
-                    </figure>
-                    <div class="card-body d-flex flex-column">
-                        <header class="card-header pb-2 border-0 bg-transparent px-0">
-                            <h3 class="card-title text-primary h5 mb-1">
-                                <i class="fas fa-chart-line me-2" aria-hidden="true"></i>
-                                Taller 1 – Métricas de Software
-                            </h3>
-                            <time class="badge bg-success float-end" datetime="2025-11-19">
-                                19 Nov 2025
-                            </time>
-                        </header>
-                        <div class="card-text text-muted small flex-grow-1">
-                            <p>Categorías fundamentales: Producto, Proceso y Proyecto. ¿Qué son las métricas? ¿Por qué medir el software? Ejemplos prácticos y beneficios reales.</p>
-                        </div>
-                        <footer class="card-footer border-0 bg-transparent px-0 pt-3 mt-auto">
-                            <a href="/pdfs/taller1-metricas.pdf" 
-                               target="_blank" 
-                               rel="noopener noreferrer"
-                               class="btn btn-outline-primary w-100"
-                               aria-label="Ver PDF del Taller 1 de Métricas de Software">
-                                <i class="fas fa-file-pdf me-2" aria-hidden="true"></i>
-                                Ver documento PDF
-                            </a>
-                        </footer>
-                    </div>
-                </article>
-            </div>
-
-            <!-- Taller 2 McCall -->
-            <div class="col trabajo-card" 
-                 data-tags="mccall calidad usabilidad recetas" 
-                 role="listitem">
-                <article class="card h-100 shadow-lg border-0 hover-shadow">
-                    <figure class="card-figure m-0">
-                        <img src="images/taller2.jpg" 
-                             class="card-img-top" 
-                             alt="Factores de calidad de McCall aplicados a recetas caseras" 
-                             loading="lazy"
-                             width="400"
-                             height="225">
-                    </figure>
-                    <div class="card-body d-flex flex-column">
-                        <header class="card-header pb-2 border-0 bg-transparent px-0">
-                            <h3 class="card-title text-primary h5 mb-1">
-                                <i class="fas fa-star me-2" aria-hidden="true"></i>
-                                Taller 2 – Factores de Calidad de McCall
-                            </h3>
-                            <time class="badge bg-warning text-dark float-end" datetime="2025-11-26">
-                                26 Nov 2025
-                            </time>
-                        </header>
-                        <div class="card-text text-muted small flex-grow-1">
-                            <p>Aplicación real de los 11 factores de McCall al proyecto <strong>"Recetas Caseras en Línea"</strong>: Usabilidad, Fiabilidad, Eficiencia, Mantenibilidad, entre otros.</p>
-                        </div>
-                        <footer class="card-footer border-0 bg-transparent px-0 pt-3 mt-auto">
-                            <a href="/pdfs/taller2-mccall.pdf" 
-                               target="_blank" 
-                               rel="noopener noreferrer"
-                               class="btn btn-outline-primary w-100"
-                               aria-label="Ver PDF del Taller 2 sobre Factores de Calidad de McCall">
-                                <i class="fas fa-file-pdf me-2" aria-hidden="true"></i>
-                                Ver documento PDF
-                            </a>
-                        </footer>
-                    </div>
-                </article>
-            </div>
-
-            <!-- Taller 3 Productividad -->
-            <div class="col trabajo-card" 
-                 data-tags="productividad loc velocity ética ágil" 
-                 role="listitem">
-                <article class="card h-100 shadow-lg border-0 hover-shadow">
-                    <figure class="card-figure m-0">
-                        <img src="images/taller3.jpg" 
-                             class="card-img-top" 
-                             alt="Métricas de productividad en desarrollo de software" 
-                             loading="lazy"
-                             width="400"
-                             height="225">
-                    </figure>
-                    <div class="card-body d-flex flex-column">
-                        <header class="card-header pb-2 border-0 bg-transparent px-0">
-                            <h3 class="card-title text-primary h5 mb-1">
-                                <i class="fas fa-tachometer-alt me-2" aria-hidden="true"></i>
-                                Taller 3 – Métricas de Productividad
-                            </h3>
-                            <time class="badge bg-info text-dark float-end" datetime="2025-11-26">
-                                26 Nov 2025
-                            </time>
-                        </header>
-                        <div class="card-text text-muted small flex-grow-1">
-                            <p>Análisis comparativo: LoC vs Valor real • Velocity • Lead Time • Consideraciones éticas • Casos ágiles vs control tóxico • Diseño de métricas propias.</p>
-                        </div>
-                        <footer class="card-footer border-0 bg-transparent px-0 pt-3 mt-auto">
-                            <a href="/pdfs/taller3-productividad.pdf" 
-                               target="_blank" 
-                               rel="noopener noreferrer"
-                               class="btn btn-outline-primary w-100"
-                               aria-label="Ver PDF del Taller 3 sobre Métricas de Productividad">
-                                <i class="fas fa-file-pdf me-2" aria-hidden="true"></i>
-                                Ver documento PDF
-                            </a>
-                        </footer>
-                    </div>
-                </article>
-            </div>
-
-            <!-- Rendimiento -->
-            <div class="col trabajo-card" 
-                 data-tags="rendimiento lighthouse jmeter velocidad escalabilidad" 
-                 role="listitem">
-                <article class="card h-100 shadow-lg border-0 hover-shadow">
-                    <figure class="card-figure m-0">
-                        <img src="images/rendimiento.jpg" 
-                             class="card-img-top" 
-                             alt="Análisis de rendimiento con herramientas Lighthouse y JMeter" 
-                             loading="lazy"
-                             width="400"
-                             height="225">
-                    </figure>
-                    <div class="card-body d-flex flex-column">
-                        <header class="card-header pb-2 border-0 bg-transparent px-0">
-                            <h3 class="card-title text-primary h5 mb-1">
-                                <i class="fas fa-bolt me-2" aria-hidden="true"></i>
-                                Métricas de Rendimiento del Software
-                            </h3>
-                            <time class="badge bg-danger text-white float-end" datetime="2025-11-26">
-                                26 Nov 2025
-                            </time>
-                        </header>
-                        <div class="card-text text-muted small flex-grow-1">
-                            <p>Tiempo de respuesta • Throughput • Latencia • Escalabilidad • Herramientas: Lighthouse y JMeter • Caso de estudio: Recetas Online.</p>
-                        </div>
-                        <footer class="card-footer border-0 bg-transparent px-0 pt-3 mt-auto">
-                            <a href="/pdfs/rendimiento.pdf" 
-                               target="_blank" 
-                               rel="noopener noreferrer"
-                               class="btn btn-outline-primary w-100"
-                               aria-label="Ver PDF sobre Métricas de Rendimiento del Software">
-                                <i class="fas fa-file-pdf me-2" aria-hidden="true"></i>
-                                Ver documento PDF
-                            </a>
-                        </footer>
-                    </div>
-                </article>
-            </div>
-
-            <!-- Video ISO -->
-            <div class="col trabajo-card" 
-                 data-tags="iso normativa video 9001 9126" 
-                 role="listitem">
-                <article class="card h-100 shadow-lg border-0 hover-shadow">
-                    <figure class="card-figure m-0">
-                        <img src="images/video.jpg" 
-                             class="card-img-top" 
-                             alt="Video sobre normativas ISO aplicadas al software" 
-                             loading="lazy"
-                             width="400"
-                             height="225">
-                    </figure>
-                    <div class="card-body d-flex flex-column">
-                        <header class="card-header pb-2 border-0 bg-transparent px-0">
-                            <h3 class="card-title text-primary h5 mb-1">
-                                <i class="fas fa-video me-2" aria-hidden="true"></i>
-                                Video Grupal – Normativas ISO
-                            </h3>
-                            <time class="badge bg-secondary float-end" datetime="2025-11-05">
-                                05 Nov 2025
-                            </time>
-                        </header>
-                        <div class="card-text text-muted small flex-grow-1">
-                            <p>Aplicación de normativas ISO 9001, 9126, 12119, 12207, 15504 al proyecto "Recetas en Línea". Análisis y casos prácticos.</p>
-                        </div>
-                        <footer class="card-footer border-0 bg-transparent px-0 pt-3 mt-auto">
-                            <div class="d-grid gap-2">
-                                <a href="/pdfs/video-iso.pdf" 
-                                   target="_blank" 
-                                   rel="noopener noreferrer"
-                                   class="btn btn-outline-primary btn-sm"
-                                   aria-label="Ver PDF con enlace al video ISO">
-                                    <i class="fas fa-file-pdf me-2" aria-hidden="true"></i>
-                                    Documento con enlace
-                                </a>
-                                <a href="https://upecedu-my.sharepoint.com/:v:/g/personal/almer_paguay_upec_edu_ec/EWuRJnf9O4BKvP7ktxD6hSbsZ7eL9lzLEz7H3Nb--cQYaQ" 
-                                   target="_blank" 
-                                   rel="noopener noreferrer"
-                                   class="btn btn-success btn-sm"
-                                   aria-label="Ver video sobre normativas ISO">
-                                    <i class="fas fa-play-circle me-2" aria-hidden="true"></i>
-                                    Reproducir video
-                                </a>
-                            </div>
-                        </footer>
-                    </div>
-                </article>
-            </div>
-
-            <!-- ISO 9126 Resumen -->
-            <div class="col trabajo-card" 
-                 data-tags="iso 9126 calidad funcionalidad fiabilidad" 
-                 role="listitem">
-                <article class="card h-100 shadow-lg border-0 hover-shadow">
-                    <figure class="card-figure m-0">
-                        <img src="images/iso9126.jpg" 
-                             class="card-img-top" 
-                             alt="Resumen de la norma ISO/IEC 9126 de calidad de software" 
-                             loading="lazy"
-                             width="400"
-                             height="225">
-                    </figure>
-                    <div class="card-body d-flex flex-column">
-                        <header class="card-header pb-2 border-0 bg-transparent px-0">
-                            <h3 class="card-title text-primary h5 mb-1">
-                                <i class="fas fa-certificate me-2" aria-hidden="true"></i>
-                                Resumen ISO/IEC 9126
-                            </h3>
-                            <time class="badge bg-dark float-end" datetime="2025-10-23">
-                                23 Oct 2025
-                            </time>
-                        </header>
-                        <div class="card-text text-muted small flex-grow-1">
-                            <p>Características de calidad: Funcionalidad, Fiabilidad, Eficiencia, Mantenibilidad, Portabilidad • Análisis detallado de subcaracterísticas y métricas asociadas.</p>
-                        </div>
-                        <footer class="card-footer border-0 bg-transparent px-0 pt-3 mt-auto">
-                            <a href="/pdfs/iso9126.pdf" 
-                               target="_blank" 
-                               rel="noopener noreferrer"
-                               class="btn btn-outline-primary w-100"
-                               aria-label="Ver PDF del Resumen de la norma ISO/IEC 9126">
-                                <i class="fas fa-file-pdf me-2" aria-hidden="true"></i>
-                                Ver documento PDF
-                            </a>
-                        </footer>
-                    </div>
-                </article>
-            </div>
-            
-        </div>
-    </main>
-
-    <!-- Pie de página -->
-    <footer class="bg-dark text-white text-center py-5 mt-5" role="contentinfo">
+    <!-- Documentos Section -->
+    <section class="documents-section py-5" id="documentos">
         <div class="container">
-            <p class="mb-1">&copy; 2025 Portafolio Académico UPEC – Carrera de Computación</p>
-            <p class="small text-white-50 mb-0">
-                Samira Narváez • Estiven Méndez • Almer Paguay<br>
-                Tulcán, Ecuador • 
-                <a href="https://upec.edu.ec" 
-                   class="text-white-50 text-decoration-underline"
-                   target="_blank"
-                   rel="noopener noreferrer">
-                    upec.edu.ec
-                </a>
-            </p>
+            <div class="section-header text-center mb-5">
+                <h2 class="section-title">Documentos Técnicos</h2>
+                <p class="section-subtitle">Explora mi colección de documentos sobre calidad de software</p>
+            </div>
+
+            <div class="row g-4">
+                <!-- Documento 1 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card document-card h-100">
+                        <div class="card-header">
+                            <span class="badge bg-primary">ISO 9126</span>
+                            <span class="badge bg-info">Estándar</span>
+                        </div>
+                        <div class="card-body">
+                            <div class="document-icon">
+                                <i class="fas fa-certificate"></i>
+                            </div>
+                            <h5 class="card-title">ISO 9126 - Calidad de Software</h5>
+                            <p class="card-text">Documento detallado sobre el estándar internacional para la calidad del producto software.</p>
+                            <div class="document-meta">
+                                <small><i class="fas fa-file-pdf text-danger"></i> PDF - 381 KB</small>
+                                <small><i class="fas fa-clock text-secondary"></i> 25 páginas</small>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <a href="pdfs/iso9126.pdf" target="_blank" class="btn btn-primary w-100">
+                                <i class="fas fa-download me-2"></i>Ver Documento
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Documento 2 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card document-card h-100">
+                        <div class="card-header">
+                            <span class="badge bg-success">Rendimiento</span>
+                            <span class="badge bg-warning">Análisis</span>
+                        </div>
+                        <div class="card-body">
+                            <div class="document-icon">
+                                <i class="fas fa-tachometer-alt"></i>
+                            </div>
+                            <h5 class="card-title">Análisis de Rendimiento</h5>
+                            <p class="card-text">Estudio sobre métricas de rendimiento y optimización de sistemas software.</p>
+                            <div class="document-meta">
+                                <small><i class="fas fa-file-pdf text-danger"></i> PDF - 610 KB</small>
+                                <small><i class="fas fa-clock text-secondary"></i> 42 páginas</small>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <a href="pdfs/rendimiento.pdf" target="_blank" class="btn btn-primary w-100">
+                                <i class="fas fa-download me-2"></i>Ver Documento
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Documento 3 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card document-card h-100">
+                        <div class="card-header">
+                            <span class="badge bg-danger">Taller 1</span>
+                            <span class="badge bg-info">Métricas</span>
+                        </div>
+                        <div class="card-body">
+                            <div class="document-icon">
+                                <i class="fas fa-ruler-combined"></i>
+                            </div>
+                            <h5 class="card-title">Taller 1 - Métricas de Software</h5>
+                            <p class="card-text">Primer taller práctico sobre aplicación de métricas en proyectos software.</p>
+                            <div class="document-meta">
+                                <small><i class="fas fa-file-pdf text-danger"></i> PDF - 331 KB</small>
+                                <small><i class="fas fa-clock text-secondary"></i> 18 páginas</small>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <a href="pdfs/taller1-metricas.pdf" target="_blank" class="btn btn-primary w-100">
+                                <i class="fas fa-download me-2"></i>Ver Documento
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Documento 4 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card document-card h-100">
+                        <div class="card-header">
+                            <span class="badge bg-danger">Taller 2</span>
+                            <span class="badge bg-success">McCall</span>
+                        </div>
+                        <div class="card-body">
+                            <div class="document-icon">
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <h5 class="card-title">Taller 2 - Modelo McCall</h5>
+                            <p class="card-text">Análisis del modelo de calidad de McCall y su aplicación práctica.</p>
+                            <div class="document-meta">
+                                <small><i class="fas fa-file-pdf text-danger"></i> PDF - 203 KB</small>
+                                <small><i class="fas fa-clock text-secondary"></i> 15 páginas</small>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <a href="pdfs/taller2-mccall.pdf" target="_blank" class="btn btn-primary w-100">
+                                <i class="fas fa-download me-2"></i>Ver Documento
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Documento 5 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card document-card h-100">
+                        <div class="card-header">
+                            <span class="badge bg-danger">Taller 3</span>
+                            <span class="badge bg-warning">Productividad</span>
+                        </div>
+                        <div class="card-body">
+                            <div class="document-icon">
+                                <i class="fas fa-chart-bar"></i>
+                            </div>
+                            <h5 class="card-title">Taller 3 - Productividad</h5>
+                            <p class="card-text">Estudio sobre métricas de productividad en desarrollo de software.</p>
+                            <div class="document-meta">
+                                <small><i class="fas fa-file-pdf text-danger"></i> PDF - 233 KB</small>
+                                <small><i class="fas fa-clock text-secondary"></i> 20 páginas</small>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <a href="pdfs/taller3-productividad.pdf" target="_blank" class="btn btn-primary w-100">
+                                <i class="fas fa-download me-2"></i>Ver Documento
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Documento 6 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card document-card h-100">
+                        <div class="card-header">
+                            <span class="badge bg-primary">Video</span>
+                            <span class="badge bg-info">Explicativo</span>
+                        </div>
+                        <div class="card-body">
+                            <div class="document-icon">
+                                <i class="fas fa-video"></i>
+                            </div>
+                            <h5 class="card-title">Video - ISO Explicado</h5>
+                            <p class="card-text">Material complementario en formato video sobre estándares ISO.</p>
+                            <div class="document-meta">
+                                <small><i class="fas fa-file-pdf text-danger"></i> PDF - 207 KB</small>
+                                <small><i class="fas fa-clock text-secondary"></i> 12 páginas</small>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <a href="pdfs/video-iso.pdf" target="_blank" class="btn btn-primary w-100">
+                                <i class="fas fa-download me-2"></i>Ver Documento
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section py-5 bg-light" id="sobre">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h2 class="mb-4">Sobre este Portafolio</h2>
+                    <p class="lead">Este portafolio recopila documentación técnica especializada en calidad de software, métricas y estándares internacionales.</p>
+                    <p>Cada documento representa un aspecto fundamental en la evaluación y mejora de la calidad del software, desde estándares ISO hasta métricas prácticas de rendimiento y productividad.</p>
+                    <div class="features-list mt-4">
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle text-primary"></i>
+                            <span>Documentación organizada por categorías</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle text-primary"></i>
+                            <span>Acceso directo a archivos PDF</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle text-primary"></i>
+                            <span>Diseño responsivo y moderno</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle text-primary"></i>
+                            <span>Información detallada de cada documento</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="stats-card p-4">
+                        <h4 class="mb-4">Estadísticas del Portafolio</h4>
+                        <div class="row text-center">
+                            <div class="col-6 mb-4">
+                                <div class="stat-number">6</div>
+                                <div class="stat-label">Documentos</div>
+                            </div>
+                            <div class="col-6 mb-4">
+                                <div class="stat-number">4</div>
+                                <div class="stat-label">Categorías</div>
+                            </div>
+                            <div class="col-6">
+                                <div class="stat-number">1.8</div>
+                                <div class="stat-label">MB Total</div>
+                            </div>
+                            <div class="col-6">
+                                <div class="stat-number">132</div>
+                                <div class="stat-label">Páginas</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer py-4" id="contacto">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h5>Portafolio de Documentación</h5>
+                    <p>Colección técnica de Jeremy sobre calidad de software</p>
+                </div>
+                <div class="col-lg-6 text-lg-end">
+                    <div class="social-links">
+                        <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-icon"><i class="fas fa-envelope"></i></a>
+                    </div>
+                    <p class="mt-3">© 2025 Jeremy. Todos los derechos reservados.</p>
+                </div>
+            </div>
         </div>
     </footer>
 
-    <!-- Bootstrap Bundle con Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
-            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" 
-            crossorigin="anonymous"
-            defer></script>
-    
-    <!-- Script personalizado -->
-    <script>
-        // Esperar a que el DOM esté completamente cargado
-        document.addEventListener('DOMContentLoaded', function() {
-            
-            // Referencias a elementos DOM
-            const searchInput = document.getElementById('searchInput');
-            const themeToggle = document.getElementById('themeToggle');
-            const trabajoCards = document.querySelectorAll('.trabajo-card');
-            const searchStatus = document.getElementById('searchStatus');
-            
-            // Sistema de búsqueda mejorado
-            if (searchInput) {
-                searchInput.addEventListener('input', function(e) {
-                    const term = e.target.value.toLowerCase().trim();
-                    let visibleCount = 0;
-                    
-                    // Filtrar tarjetas
-                    trabajoCards.forEach(card => {
-                        const tags = card.dataset.tags;
-                        const cardTitle = card.querySelector('.card-title').textContent.toLowerCase();
-                        const cardText = card.querySelector('.card-text').textContent.toLowerCase();
-                        
-                        // Buscar en tags, título y contenido
-                        const matches = tags.includes(term) || 
-                                        cardTitle.includes(term) || 
-                                        cardText.includes(term);
-                        
-                        if (matches || term === '') {
-                            card.style.display = '';
-                            visibleCount++;
-                        } else {
-                            card.style.display = 'none';
-                        }
-                    });
-                    
-                    // Actualizar estado de búsqueda para lectores de pantalla
-                    if (searchStatus) {
-                        searchStatus.textContent = `${visibleCount} trabajos encontrados`;
-                    }
-                });
-                
-                // Limpiar búsqueda con la tecla Escape
-                searchInput.addEventListener('keydown', function(e) {
-                    if (e.key === 'Escape') {
-                        this.value = '';
-                        this.dispatchEvent(new Event('input'));
-                        this.focus();
-                    }
-                });
-            }
-            
-            // Toggle tema claro/oscuro mejorado
-            if (themeToggle) {
-                // Verificar preferencia del sistema
-                const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)');
-                const savedTheme = localStorage.getItem('theme');
-                
-                // Aplicar tema guardado o preferencia del sistema
-                if (savedTheme === 'dark' || (!savedTheme && prefersDarkScheme.matches)) {
-                    document.documentElement.setAttribute('data-bs-theme', 'dark');
-                    themeToggle.innerHTML = '<i class="fas fa-sun" aria-hidden="true"></i><span class="visually-hidden">Cambiar a tema claro</span>';
-                }
-                
-                // Manejar cambio de tema
-                themeToggle.addEventListener('click', function() {
-                    const html = document.documentElement;
-                    const isDark = html.getAttribute('data-bs-theme') === 'dark';
-                    const newTheme = isDark ? 'light' : 'dark';
-                    
-                    // Cambiar tema
-                    html.setAttribute('data-bs-theme', newTheme);
-                    
-                    // Actualizar icono y texto alternativo
-                    this.innerHTML = isDark 
-                        ? '<i class="fas fa-moon" aria-hidden="true"></i><span class="visually-hidden">Cambiar a tema oscuro</span>'
-                        : '<i class="fas fa-sun" aria-hidden="true"></i><span class="visually-hidden">Cambiar a tema claro</span>';
-                    
-                    // Guardar preferencia
-                    localStorage.setItem('theme', newTheme);
-                    
-                    // Enfocar el botón para mejor accesibilidad
-                    this.focus();
-                });
-            }
-            
-            // Mejorar accesibilidad de las tarjetas
-            trabajoCards.forEach(card => {
-                card.addEventListener('keydown', function(e) {
-                    if (e.key === 'Enter' || e.key === ' ') {
-                        const link = this.querySelector('a');
-                        if (link) {
-                            e.preventDefault();
-                            link.click();
-                        }
-                    }
-                });
-                
-                // Añadir tabindex para navegación por teclado
-                card.setAttribute('tabindex', '0');
-            });
-        });
-    </script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
 </body>
 </html>
-
